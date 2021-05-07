@@ -1,0 +1,179 @@
+<div class="container" style="height: 100%; overflow-x: hidden;">
+  <div class="row">
+    <div class="col-md-6">
+     <div class="row">
+      <div class="col-md-6"><mat-card>
+        <mat-card-content>
+
+          <h3>Visit in Link</h3>
+          <hr style="color: orange; width: 100%;">
+          <br><h4 style="text-align: center;">999</h4>
+        </mat-card-content>
+       </mat-card>
+      </div>
+      <div class="col-md-6"><mat-card> <mat-card-content>
+
+       <h3>Visit in Panel</h3>
+       <hr style="color: orange; width: 100%;">
+       <br><h4 style="text-align: center;">999</h4>
+      </mat-card-content></mat-card>
+      </div>
+     </div>
+     <br>
+<div class="row">
+
+  <div class="col-md-12">
+    <mat-card> <mat-card-content>
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="Links">
+          <th mat-header-cell *matHeaderCellDef> Links </th>
+          <td mat-cell *matCellDef="let element"> {{element.links}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="Visitas">
+          <th mat-header-cell *matHeaderCellDef> Visitas</th>
+          <td mat-cell *matCellDef="let element"> {{element.visitas}} </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+    </mat-card-content></mat-card>
+
+  </div>
+</div>
+
+    </div>
+    <div class="col-md-6">
+<div class="row">
+<div class="col-md-12">
+  <br><br><br>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+  <mat-card> <mat-card-content>
+    <h3>Painel</h3>
+    <hr style="color: orange; width: 100%;">
+    <br>
+    <mat-accordion>
+
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+Boutique Nagah
+          </mat-panel-title>
+          <mat-panel-description>
+Clique Aqui !!
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-md-6">
+            <button mat-stroked-button color="warn" style="width: 100%;">Visitar</button>
+
+            </div>
+            <div class="col-md-6">
+              <button mat-stroked-button color="warn" style="width: 100%;">Editar</button>
+
+            </div>
+          </div>
+
+      </mat-expansion-panel>
+    </mat-accordion>
+    <br>
+    <mat-accordion>
+
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+Curtin.la          </mat-panel-title>
+          <mat-panel-description>
+
+Clique Aqui !!
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-md-6">
+            <button mat-stroked-button color="warn" style="width: 100%;">Visitar</button>
+
+            </div>
+            <div class="col-md-6">
+              <button mat-stroked-button color="warn" style="width: 100%;">Editar</button>
+
+            </div>
+          </div>      </mat-expansion-panel>
+    </mat-accordion>
+    <br>
+    <mat-accordion>
+
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+Akrishina Designer
+          </mat-panel-title>
+          <mat-panel-description>
+Clique Aqui !!
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-md-6">
+            <button mat-stroked-button color="warn" style="width: 100%;">Visitar</button>
+
+            </div>
+            <div class="col-md-6">
+              <button mat-stroked-button color="warn" style="width: 100%;">Editar</button>
+
+            </div>
+          </div>      </mat-expansion-panel>
+    </mat-accordion>
+
+
+  </mat-card-content></mat-card>
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-md-12">
+  <mat-card> <mat-card-content>
+    <h3>Perfil</h3>
+          <hr style="color: orange; width: 100%;">
+<br>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+  <div class="row">
+<b>Plano contratado:</b>
+  </div>
+  <div class="row">
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+</div>
+<div class="col-md-6">
+  <div class="row">
+   <b> Vigência: </b>
+    </div>
+    <div class="row">
+      aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      </div>
+  </div>
+</div>
+</div>
+  </mat-card-content></mat-card>
+</div>
+</div>
+  </div>
+
+
+</div>
