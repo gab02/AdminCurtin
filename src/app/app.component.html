@@ -59,7 +59,7 @@
 </p-sidebar> -->
 
 <mat-drawer-container  class="example-container" autosize [class.dark-theme]="hasToggledTheme" class="mat-app-background" [style.height]="'100%'" >
-<div  *ngIf="valorLogin === true">
+<div >
   <mat-drawer   #drawer class="example-sidenav" mode="side">
     <mat-icon  (click)="toggleTheme()" style="margin-top: 5px; margin-left: 75%;">wb_incandescent</mat-icon>
 
@@ -128,7 +128,7 @@
    </div>
 
     </div>
-         </router-outlet>ssss
+         </router-outlet>
   </div>
 
 </mat-drawer-container>
